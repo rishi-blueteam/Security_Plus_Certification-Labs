@@ -154,7 +154,7 @@ We first just over the surface view the security of the and safety of the site w
     ![SHA-256](../../Screenshots/Domain%204/Subject%20Finger%20Print.png)
 
 
-### Why is validted and Certified certificate from a CA important?
+#### **Why is validted and Certified certificate from a CA important?**
 
 ```
 Despite a user  securing its connection with a website using the HTTPS protocol, it only ensures the encrypted connection of user and server, while it encrypts the data sent between each other. The real safety of a connection with a user based on the server's identity is guarnteed by the CA. 
