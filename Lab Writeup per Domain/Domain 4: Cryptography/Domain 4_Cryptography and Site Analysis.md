@@ -1,12 +1,13 @@
 # Aim
 
-### To analyze and Compare:
+**To analyze and Compare:**
 
 - A valid trusted Certificate
 
 - An In-Valid / Self Signed Certificate
 
-### Key Terms to understand
+**Key Terms to understand:**
+
 - Issuer
 - Subject
 - Validity
@@ -15,7 +16,7 @@
 - Certificate Chain
 - Trust Model
 
-# Site used for analysis:
+**Site used for analysis:**
 
 - https://www.wifrizzy.com/  
 - https://www.ssllabs.com/ssltest/ 
@@ -153,9 +154,11 @@ We first just over the surface view the security of the and safety of the site w
     ![SHA-256](../../Screenshots/Domain%204/Subject%20Finger%20Print.png)
 
 
-## Why is validted and Certified certificate from a CA important?
+### Why is validted and Certified certificate from a CA important?
 
-> Despite a user  securing its connection with a website using the HTTPS protocol, it only ensures the encrypted connection of user and server, while it encrypts the data sent between each other. The real safety of a connection with a user based on the server's identity is guarnteed by the CA. 
+```
+Despite a user  securing its connection with a website using the HTTPS protocol, it only ensures the encrypted connection of user and server, while it encrypts the data sent between each other. The real safety of a connection with a user based on the server's identity is guarnteed by the CA. 
+```
 
 - A CA's Role is to verify that the applicant own's the domian and operate it.
 - Without a CA a MITM (Man In The Middle Attack is still possible)
@@ -222,7 +225,7 @@ We are able to notice the following readings from the site:
 ![Untrusted Certification Path of Website](../../Screenshots/Domain%204/Un-Trusted%20Website%20Certification%20Path.png)
 
 
-# Blue Team Perspective
+## Blue Team Perspective
 
 From an angle of blue team we can keep certain kind of alerts generation specially if users are visiting un trusted website: 
 
@@ -230,9 +233,7 @@ From an angle of blue team we can keep certain kind of alerts generation special
 - Rouge Internal Certificates
 - Fake Certificates used in Phishing
 
-## Point to Be Noted
-
-It is important to know and to be aware despite a HTTPS secure Protcol, a valid CA certificate. MITM is still possible and it can still exploit users who are going to be using a website they visit. 
+> Point to Be Noted: It is important to know and to be aware despite a HTTPS secure Protcol, a valid CA certificate. MITM is still possible and it can still exploit users who are going to be using a website they visit. 
 
 ### Reasons:
 
@@ -244,11 +245,11 @@ It is important to know and to be aware despite a HTTPS secure Protcol, a valid 
 
 
 
-# Conclusion
+## Conclusion
 
 This shows us the importance of SSL/TLS certificate and how it is important to know and be aware of the sites we are using. We should't go and always cross verify with tools if we are using a legitmate site, but sometimes having teams like SOC and certain policy wihin organization can really make the difference. It is a matter of knowledge and the matter of how we should be aware as a user. 
 
-# Resources
+## Resources
 
 - https://web.archive.org/web/20161213142308/https://www.instantssl.com/ssl-certificate-products/https.html 
 - https://www.serverion.com/uncategorized/ssl-tls-handshake-process-step-by-step-guide/
