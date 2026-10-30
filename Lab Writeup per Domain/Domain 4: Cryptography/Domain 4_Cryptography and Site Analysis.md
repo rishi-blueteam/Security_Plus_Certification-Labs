@@ -94,17 +94,17 @@ We first just over the surface view the security of the and safety of the site w
 
 > This does not mean if the site is using a HTTPS protocol itselfbut it also means that other than a secure protocol does the site use a valid certificate. and why is a valid certificate important..is what I will answer below.
 
-![Site Picture and Connection Secure](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Site%20Screenshot%20%2B%20Connection%20Secure.png)
+![Site Picture and Connection Secure](../../Screenshots/Domain%204%204/Site%20Screenshot%20%2B%20Connection%20Secure.png)
 
 - We first click the lock symbol or the button next to the referesh sign
 
-![Secure Lock SIgn Button](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Secure%20Lock%20SIgn%20Button.png)
+![Secure Lock SIgn Button](../../Screenshots/Domain%204%204/Secure%20Lock%20SIgn%20Button.png)
 
 - Go to connection is secure and see the certification is valid.
 
 - We click on certificate is valid and a new dynamic build in page for the Certifcate gets opened.
 
-![New Certificate page gets opened](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/New%20Certificate%20Page%20Gets%20Opened.png)
+![New Certificate page gets opened](../../Screenshots/Domain%204%204/New%20Certificate%20Page%20Gets%20Opened.png)
 
 ### Information to be Extracted
 
@@ -127,13 +127,13 @@ We first just over the surface view the security of the and safety of the site w
 
     PKCS #1 SHA-256 With RSA Encryption 
 
-    ![Subject, Issuer, Validity and Algo](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Certificate%20Subject%2C%20Validity%2C%20and%20Algo.png)
+    ![Subject, Issuer, Validity and Algo](../../Screenshots/Domain%204%204/Certificate%20Subject%2C%20Validity%2C%20and%20Algo.png)
 
 - **Public Key Size (2048-bit, 4096-bit):** 
     
     2048-bit
 
-    ![subject public key size](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Subject%20Public%20Key%20Size.png)
+    ![subject public key size](../../Screenshots/Domain%204%204/Subject%20Public%20Key%20Size.png)
 
 - **Certificate Subject Alternative Name:**
     
@@ -143,14 +143,14 @@ We first just over the surface view the security of the and safety of the site w
     
     DNS Name: www.wifrizzy.com
     
-    ![SAN Image](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Subject%20Alternative%20Name.png)
+    ![SAN Image](../../Screenshots/Domain%204%204/Subject%20Alternative%20Name.png)
 
 - **SHA-256: Public FIngerprint:**
     
     - **Certificate:** 8c52909cb38d657766cc4acdc16addf040c7a90a637a72789580bb81e49c94b2
     - **Public key:**	585c5ee3887801e2bcfda537d4138bc5c02df5ee97461e0f6fcf05293269d83d
     
-    ![SHA-256](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Subject%20Finger%20Print.png)
+    ![SHA-256](../../Screenshots/Domain%204%204/Subject%20Finger%20Print.png)
 
 
 ## Why is validted and Certified certificate from a CA important?
@@ -192,7 +192,7 @@ This gives:
 
 Verified Score of the website is:
 
-![Verified Site Score](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Certificate%20Report%20for%20Site%20Testing.png)
+![Verified Site Score](../../Screenshots/Domain%204%204/Certificate%20Report%20for%20Site%20Testing.png)
 
 ## Part 3: Investigation of a Non-Trusted Certificate
 
@@ -207,19 +207,19 @@ We are able to notice the following readings from the site:
 
 - Broswer Warning
 
-![Unsafe Site for poor ssl certification testing](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Un-Verified%20Certificate.png)
+![Unsafe Site for poor ssl certification testing](../../Screenshots/Domain%204%204/Un-Verified%20Certificate.png)
 
 - Organization and the Issuer are the same hence poor readings.
 
-![Self Registered](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Organization%20and%20Self%20Issued.png)
+![Self Registered](../../Screenshots/Domain%204%204/Organization%20and%20Self%20Issued.png)
 
 - Trust Score of Website
 
-![Trust Score of Website](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Un-Trusted%20Website%20Certificate%20Score.png)
+![Trust Score of Website](../../Screenshots/Domain%204%204/Un-Trusted%20Website%20Certificate%20Score.png)
 
 - Certification Path
 
-![Untrusted Certification Path of Website](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%204/Un-Trusted%20Website%20Certification%20Path.png)
+![Untrusted Certification Path of Website](../../Screenshots/Domain%204%204/Un-Trusted%20Website%20Certification%20Path.png)
 
 
 # Blue Team Perspective
