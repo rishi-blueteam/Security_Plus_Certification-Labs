@@ -98,7 +98,7 @@ We first just over the surface view the security of the and safety of the site w
 
 - We first click the lock symbol or the button next to the referesh sign
 
-![Secure Lock SIgn Button](../../Screenshots/Domain%204/%204/Secure%20Lock%20SIgn%20Button.png)
+![Secure Lock SIgn Button](../../Screenshots/Domain%204/Secure%20Lock%20SIgn%20Button.png)
 
 - Go to connection is secure and see the certification is valid.
 
