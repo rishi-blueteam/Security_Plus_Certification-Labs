@@ -25,17 +25,17 @@ To demonstrate **CIA Triad** : (Confidentiality, Integrity, and Availability) us
 - Set Password to your wish
 - Security Algorithm (AES256)
 
-![Format and Password](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/7z1_Password_Confidentiality.png)
+![Format and Password](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/7z1_Password_Confidentiality.png)
   
 - File Encrypted Visible
 
-![File Encrypted](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Encrypted.png)
+![File Encrypted](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Encrypted.png)
 
 - Open the same file (if .7Z open with 7Zip app itself)
 - The file manager will be asking for password
 
 
-![File attempt Opening](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/C_Triad.png)
+![File attempt Opening](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/C_Triad.png)
 
 - This shows when we are trying to access a file which is password protected, it prevent us to access it as we do not have the right credentials to access it which verifies **Confidentiality**
 
@@ -47,9 +47,9 @@ To demonstrate **CIA Triad** : (Confidentiality, Integrity, and Availability) us
 
 - First we create the File, with its **original contents** that file is 
 
-![File Creation](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/7z1_App.png)
+![File Creation](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/7z1_App.png)
 
-![Original Contents](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Contents%20Original.png)
+![Original Contents](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Contents%20Original.png)
 
 - To verify integrity we will first open the terminal in the folder where the actual file is located. Powershell opens up
 - We list down what all contents are present in the directory using command [ls]
@@ -62,11 +62,11 @@ To demonstrate **CIA Triad** : (Confidentiality, Integrity, and Availability) us
 
 **MD5** : E00817721DAA63F650F415478DA6A46
 
-![Original Hash File](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Hash%20SHA256%26md5.png)
+![Original Hash File](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Hash%20SHA256%26md5.png)
 
 - Now we will modify a charecter in the same file and then verifiy the hash to see if the integrity of the file has changed or no.
 
-![Modified COntent](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Contents%20Modified.png)
+![Modified COntent](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Contents%20Modified.png)
 
 **Hash of Modified File:**
 
@@ -74,7 +74,7 @@ To demonstrate **CIA Triad** : (Confidentiality, Integrity, and Availability) us
 
 **MD5 :** 595790DC5DFE21F04D0601E89D496F57
 
-![FIle hash modified](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Hash%20MD5%20%26%20SHA256%20Modified.png)
+![FIle hash modified](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/File%20Hash%20MD5%20%26%20SHA256%20Modified.png)
 
 Since we changed the file's content we are able to verify the files integrity has been changed
 
@@ -84,13 +84,13 @@ Since we changed the file's content we are able to verify the files integrity ha
 
 - This is if you are working for an organization you are most likely to have two sets of users present in your Endpoint. One is The host (you) second would be the another user group like admin.
 
-![Users Info](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/Avaliablity%20.png)
+![Users Info](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/Avaliablity%20.png)
 
 - The level of authorization for a specific file varies from user groups. The admin / IT Support groups has full access like the admin.
 - The host working for the organization has limited access to resources present in the system
 - **Example:** Registry Hive, Program Files, Network Shares and Services
 
-![Different Users Different Access](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/Avaliablity%202.png)
+![Different Users Different Access](../../Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/Avaliablity%202.png)
 
 <h3> SOC Real Life </h3>
 
