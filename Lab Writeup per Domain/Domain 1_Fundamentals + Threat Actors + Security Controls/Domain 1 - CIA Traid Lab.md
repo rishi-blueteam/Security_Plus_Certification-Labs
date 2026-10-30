@@ -16,7 +16,7 @@ To demonstrate **CIA Triad** : (Confidentiality, Integrity, and Availability) us
 
 - Use app 7-Zip
 
-  ![7 Zip APP](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/7ZIP%20App.png)
+  ![7 Zip APP](../../Screenshots/Domain%201_Fundamentals/7ZIP%20App.png)
 - Open the folder where you want to encrypt the file
 
 ![App Folder Location](https://github.com/rishi-blueteam/Security-Certification-Labs/blob/main/Screenshots/Domain%201_Fundamentals%20%2B%20TA%20%2B%20SC/7z1_App%20Open%20and%20Encrypt.png)
