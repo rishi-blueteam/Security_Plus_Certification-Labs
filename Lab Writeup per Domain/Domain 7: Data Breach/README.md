@@ -76,13 +76,28 @@ While the exact zero-day entry exploit or definitive single vulnerability remain
 
 ---
 
-## 5. Lab Assessment Questions
+## 6. Mitigation & Attack Prevention Strategies
+To defend against bulk database exfiltration and subsequent credential abuse, a multi-layered defensive posture must be implemented. Security controls are split into infrastructure hardening (protecting the app) and identity isolation (protecting users and networks).
 
-1. **Why does a database compromise on an external consumer app like Dubsmash pose an immediate threat to a separate, high-security enterprise network?**
-   * *Answer:* Users consistently reuse identical email and password credentials across personal accounts and corporate enterprise workstations. This allows bad actors to turn low-value third-party app leaks into highly effective enterprise credential-stuffing points.
+### A. Infrastructure & Application Hardening (Preventing the Initial Exfiltration)
+If the application providers had deployed robust baseline technical controls, the initial network penetration or raw data extraction could have been blocked entirely:
 
-2. **How does the implementation of an algorithm like PBKDF2 alter the attacker's workflow following a massive database exfiltration?**
-   * *Answer:* Unlike fast algorithms (like MD5), PBKDF2 uses computationally expensive key-stretching iterations. This slows down offline mass brute-force processing on hardware clusters, making dictionary-cracking attempts on complex passwords highly impractical and time-consuming.
+* **Input Validation & Parameterized Queries:** To neutralize common web entry points like SQL Injection (SQLi) 
+    - This treats all user input strictly as parameters rather than executable SQL commands, stopping unauthorized database access paths.
+- **Database Micro-Segmentation:** Databases storing sensitive user profiles must be isolated on an internal network segment completely hidden from direct public internet exposure. 
 
-3. **What form of security detection parameter was visibly absent during the timeline of the Dubsmash exfiltration?**
-   * *Answer:* The absence of Data Loss Prevention (DLP) frameworks or network egress monitoring allowed threat actors to transfer millions of comprehensive user records entirely undetected without triggering anomaly thresholds or network isolation protocols.
+- **Implementation of Egress-Focused DLP (Data Loss Prevention):** The massive payload containing 161.7 million records should have been flagged instantly. 
+    - Implementing strict egress rules and DLP alert triggers on bulk database queries helps identify and systematically block anomalous bulk network traffic transfers.
+* **The Principle of Least Privilege (PoLP):** Service accounts operating between the web application front-end and the relational database backend should strictly hold permissions tailored to their specific operational tasks.
+
+- **Web Application Firewall (WAF) Deployment:** Placing an inline WAF in front of web applications allows organizations to monitor and filter incoming client-side payloads. 
+
+### B. Identity & Access Protections (Mitigating Post-Breach Credential Stuffing)
+
+When database theft does happen on a third-party app, organizations and individual users must depend on robust Identity and Access Management (IAM) architectures to minimize the blast radius:
+
+- **Mandating Multi-Factor Authentication (MFA):** Deploying multi-factor authentication creates an adaptive barrier. 
+- **Enforcing Password Complexity & Uniqueness via Enterprise Vaults:** Forcing the creation of unique, unpredictable passphrases eliminates the core danger of downstream credential-stuffing exploits.
+
+- **Automated Continuous Dark Web & OSINT Audits:** Modern defense operations can programmatically integrate continuous monitoring lookups via resources like the [Have I Been Pwned API](https://haveibeenpwned.com).
+---
